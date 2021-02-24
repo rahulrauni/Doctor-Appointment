@@ -30,50 +30,41 @@
 
             <EditText
                 android:id="@+id/mobileText"
-                android:layout_width="366dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="21dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:ems="10"
                 android:hint="mobilenumber"
                 android:inputType="number"
                 android:textColorHint="@android:color/tertiary_text_light"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/regtexview" />
 
 
             <EditText
                 android:id="@+id/pincodeText"
-                android:layout_width="363dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:textColorHint="@android:color/tertiary_text_light"
                 android:ems="10"
                 android:hint="Pincode"
                 android:inputType="number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mobileText" />
 
 
             <EditText
                 android:id="@+id/ageText"
-                android:layout_width="362dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="22dp"
-                android:layout_marginEnd="29dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:ems="10"
                 android:hint="Age"
                 android:inputType="number"
                 app:layout_constraintBottom_toTopOf="@+id/descriptionEditText"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
+
                 app:layout_constraintTop_toBottomOf="@+id/genderGroup" />
 
             <EditText
@@ -121,39 +112,28 @@
 
             <EditText
                 android:id="@+id/addressText"
-                android:layout_width="360dp"
-                android:layout_height="67dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="Address"
                 android:inputType="textMultiLine"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
+
                 app:layout_constraintTop_toBottomOf="@+id/pincodeText" />
 
             <EditText
                 android:id="@+id/descriptionEditText"
-                android:layout_width="367dp"
-                android:layout_height="77dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="Description"
                 android:inputType="textMultiLine"
                 app:layout_constraintBottom_toTopOf="@+id/uploadbutton"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ageText" />
 
             <TextView
@@ -173,18 +153,12 @@
 
             <EditText
                 android:id="@+id/nameField"
-                android:layout_width="362dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginLeft="26dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
                 android:ems="10"
                 android:hint="Full Name"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cityText" />
 
             <RadioGroup

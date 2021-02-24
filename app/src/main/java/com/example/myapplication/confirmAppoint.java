@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -44,6 +45,7 @@ public class confirmAppoint extends AppCompatActivity {
                 appoint.child("description").setValue(getIntent().getStringExtra("description"));
                 appoint.child("gender").setValue(getIntent().getStringExtra("gender"));
                 appoint.child("usseregrid").setValue(getIntent().getStringExtra("id"));
+                Toast.makeText(confirmAppoint.this, "Your Appointment is suceesfully booked", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
         });
