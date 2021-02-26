@@ -140,7 +140,7 @@
                 android:id="@+id/genderText"
                 android:layout_width="71dp"
                 android:layout_height="27dp"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="52dp"
                 android:layout_marginTop="19dp"
                 android:layout_marginBottom="13dp"
                 android:backgroundTint="@color/colorPrimaryDark"

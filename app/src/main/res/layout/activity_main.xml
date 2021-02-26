@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    android:layout_gravity="center"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <ImageView
@@ -15,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/textView"
@@ -28,6 +32,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
@@ -46,28 +51,34 @@
         android:id="@+id/addDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD DETAILS"
-        android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/signOutButton" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/fui_transparent" />
 
     <Button
         android:id="@+id/userDetail"
-        android:layout_width="match_parent"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="userdetails"
-        android:background="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/addDetails" />
+        android:layout_above="@+id/bookAppointment"
+        android:layout_below="@+id/addDetails"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/fui_transparent"/>
 
     <Button
         android:id="@+id/bookAppointment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="book appointment"
-       android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/userDetail" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="39dp"
+        android:background="@color/fui_transparent"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
